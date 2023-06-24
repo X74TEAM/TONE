@@ -46,14 +46,12 @@ for agent in range(10000):
         l='Mobile Safari/533.1'
         fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
         ugen.append(fullagnt)
-logo=("""\033[1;37m
+logo=("""\x1b[38;5;10m
 ██   ██ ███████ ██   ██ 
  ██ ██       ██ ██   ██ 
   ███       ██  ███████ 
  ██ ██     ██        ██ 
 ██   ██    ██        ██ 
-                        
-                        
 ----------------------------------------------
  Developer : DEVHIS
  Github    : X74 TEAM
@@ -202,7 +200,7 @@ def public():
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python bikash.py')
+                os.system('python TONE.py')
         except requests.exceptions.ConnectionError:
                 exit(f' No internet connection')
         except (KeyError,IOError):
@@ -275,7 +273,7 @@ def menu():
                                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                                 linex()
                                 input(' Press enter to back ')
-                                os.system('python bikash.py')
+                                os.system('python TONE.py')
                         elif xd in ['2','02']:
                                 import dump
                                 dump.Main()
@@ -326,7 +324,7 @@ def menu():
                         linex()
                         tks = ("Hi Bikash Sir, I Need To Buy Your Paid BIKASH PRO Tools Version 2.0 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
                         subprocess.check_output(["am", "start", url_wa+(tks)]);time.sleep(2)
-                        print(' Run :  python bikash.py')
+                        print(' Run :  python TONE.py')
                         exit()
         except ValueError:
                 exit()
@@ -354,7 +352,7 @@ def pak():
                         linex()
                         for psx in user:
                                 ids = code+psx
-                                passlist = [psx,ids,'khankhan','khan1122','khan12345','khan1234','khan12','khan786','khan123','khan123456','khankhan123','786786']
+                                passlist = [psx,ids,'khankhan','khan1122','khan12345','khan1234','khan12','khan786','khan123','khan123456','khankhan123','786786','102030','203040','304050','405060']
                                 Aking.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
@@ -362,7 +360,7 @@ def pak():
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python bikash.py')
+                os.system('python TONE.py')
 def bd():
                 user=[]
                 clear()
@@ -392,7 +390,7 @@ def bd():
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python bikash.py')
+                os.system('python TONE.py')
 def gmail():
                 os.system('rm -rf .re.txt')
                 clear()
@@ -447,7 +445,7 @@ def gmail():
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python bikash.py')
+                os.system('python TONE.py')
 def ffb(ids,names,passlist):
         global loop,oks,cps
         sys.stdout.write('\r\r\033[1;37m [BIKASH-XD] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
